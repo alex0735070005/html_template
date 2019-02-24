@@ -126,6 +126,50 @@ header .container {
     right:0;
 }
 
+#services {
+    margin: 60px auto;
+}
+
+.service {
+    width: 25%;
+}
+
+@keyframes hoverService { 
+   0% {
+    top: 0px; 
+    background: #fff;
+    color: #000;
+   }
+   
+   100% {
+    top: -10px;
+    color: #fff;
+    background: #76c38f;
+   }
+}
+
+.service .wrap {
+    box-shadow: 0 0 7px 2px #0000008f;
+    margin: 0 10px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.service .wrap:hover {
+    cursor: pointer;
+    animation: hoverService 1s;
+    top: -10px;
+    color: #fff;
+    background: #76c38f;
+}
+
+.service h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 10px 0 15px 0;
+}
+
 @media(max-width: 840px) {
     #slider .image {
         max-width: 260px;
