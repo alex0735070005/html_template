@@ -127,7 +127,7 @@ header .container {
 }
 
 #services {
-    margin: 60px auto;
+    margin: 60px auto 45px auto;
 }
 
 .service {
@@ -156,6 +156,14 @@ header .container {
     position: relative;
 }
 
+#services .service:nth-child(4n) .wrap {
+    margin-right: 0;
+}
+
+#services .service:nth-child(4n+1) .wrap {
+    margin-left: 0;
+}
+
 .service .wrap:hover {
     cursor: pointer;
     animation: hoverService 1s;
@@ -166,8 +174,42 @@ header .container {
 
 .service h2 {
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 28px;
     margin: 10px 0 15px 0;
+}
+
+#gallery .image-block {
+    width: 33.33%;
+}
+
+div#gallery .image-block:nth-child(3n) .wrap {
+    margin-right: 0;
+}
+
+#gallery .image-block:nth-child(3n+1) .wrap {
+    margin-left: 0;
+}
+
+#gallery .wrap {
+    box-shadow: 0 0 5px 2px #00000063;
+    margin: 16px;
+    position: relative;
+}
+
+#gallery .wrap img {
+    width: 100%;
+    min-height: 205px;
+}
+
+#gallery .wrap span {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: #00000073;
+    color: #fff;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
 }
 
 @media(max-width: 840px) {
